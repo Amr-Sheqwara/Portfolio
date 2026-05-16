@@ -1,18 +1,541 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <div class="card border">
-            <img
-                src="/images/Me.png"
-                alt="Amr Sheqwara smiling at the camera"
-                class="avatar border">
-           <div class="border info">
-                <h3>Amr Sheqwara</h3>
-                <p>AI/ML Engineer</p>
-                <h4>Tulkarm, Palestine</h4>
-           </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amr Sheqwara — AI/ML Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <button id="menu-btn" class="hamburger-btn">☰</button>
+
+      <div id="side-drawer" class="drawer">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <ul class="drawer-links">
+          <li>
+            <a href="#about" id="nav-about"
+              ><span class="underScore">_</span>about</a
+            >
+          </li>
+          <li>
+            <a href="#skills" id="nav-skills"
+              ><span class="underScore">_</span>skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" id="nav-projects"
+              ><span class="underScore">_</span>projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" id="nav-Hire"
+              ><span class="underScore">_</span>hire<span class="underScore"
+                >_</span
+              >me</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="logo-svg-wrap">
+        <svg
+          viewBox="60 135 560 130"
+          xmlns="http://www.w3.org/2000/svg"
+          height="72"
+          aria-label="Amr Sheqwara logo"
+        >
+          <g opacity="0.18">
+            <circle cx="80" cy="80" r="1.5" fill="#1d9e75" />
+            <circle cx="120" cy="80" r="1.5" fill="#1d9e75" />
+            <circle cx="160" cy="80" r="1.5" fill="#1d9e75" />
+            <circle cx="80" cy="120" r="1.5" fill="#1d9e75" />
+            <circle cx="120" cy="120" r="1.5" fill="#1d9e75" />
+            <circle cx="160" cy="120" r="1.5" fill="#1d9e75" />
+            <circle cx="520" cy="80" r="1.5" fill="#1d9e75" />
+            <circle cx="560" cy="80" r="1.5" fill="#1d9e75" />
+            <circle cx="600" cy="80" r="1.5" fill="#1d9e75" />
+            <circle cx="520" cy="120" r="1.5" fill="#1d9e75" />
+            <circle cx="560" cy="120" r="1.5" fill="#1d9e75" />
+            <circle cx="600" cy="120" r="1.5" fill="#1d9e75" />
+          </g>
+          <polyline
+            points="60,155 60,140 75,140"
+            fill="none"
+            stroke="#9fe1cb"
+            stroke-width="1.5"
+            stroke-linecap="square"
+          />
+          <polyline
+            points="60,245 60,260 75,260"
+            fill="none"
+            stroke="#9fe1cb"
+            stroke-width="1.5"
+            stroke-linecap="square"
+          />
+          <polyline
+            points="620,155 620,140 605,140"
+            fill="none"
+            stroke="#9fe1cb"
+            stroke-width="1.5"
+            stroke-linecap="square"
+          />
+          <polyline
+            points="620,245 620,260 605,260"
+            fill="none"
+            stroke="#9fe1cb"
+            stroke-width="1.5"
+            stroke-linecap="square"
+          />
+          <line
+            x1="60"
+            y1="148"
+            x2="620"
+            y2="148"
+            stroke="#5dcaa5"
+            stroke-width="1"
+            opacity="0.5"
+          />
+          <line
+            x1="480"
+            y1="0"
+            x2="480"
+            y2="400"
+            stroke="#5dcaa5"
+            stroke-width="1"
+            opacity="0.5"
+          />
+          <line
+            x1="200"
+            y1="0"
+            x2="200"
+            y2="400"
+            stroke="#5dcaa5"
+            stroke-width="1"
+            opacity="0.5"
+          />
+          <line
+            x1="60"
+            y1="252"
+            x2="620"
+            y2="252"
+            stroke="#5dcaa5"
+            stroke-width="1"
+            opacity="0.5"
+          />
+          <polyline
+            points="108,168 88,168 88,200 88,232 108,232"
+            fill="none"
+            stroke="#5dcaa5"
+            stroke-width="2.5"
+            stroke-linecap="square"
+          />
+          <polyline
+            points="572,168 592,168 592,200 592,232 572,232"
+            fill="none"
+            stroke="#5dcaa5"
+            stroke-width="2.5"
+            stroke-linecap="square"
+          />
+          <text
+            id="logo"
+            x="340"
+            y="210"
+            text-anchor="middle"
+            dominant-baseline="middle"
+            fill="#5dcaa5"
+            font-family="Rajdhani, monospace"
+            font-size="82"
+            font-weight="600"
+          ></text>
+          <polygon points="200,144 204,148 200,152 196,148" fill="#5dcaa5" />
+          <polygon points="340,144 344,148 340,152 336,148" fill="#5dcaa5" />
+          <polygon points="480,144 484,148 480,152 476,148" fill="#5dcaa5" />
+          <polygon points="200,248 204,252 200,256 196,252" fill="#5dcaa5" />
+          <polygon points="340,248 344,252 340,256 336,252" fill="#5dcaa5" />
+          <polygon points="480,248 484,252 480,256 476,252" fill="#5dcaa5" />
+        </svg>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#contact"><span class="underScore">_</span>contact</a>
+        </li>
+        <li>
+          <a href="#projects"><span class="underScore">_</span>projects</a>
+        </li>
+        <li>
+          <a href="#skills"><span class="underScore">_</span>skills</a>
+        </li>
+        <li>
+          <a href="#about"><span class="underScore">_</span>Home</a>
+        </li>
+      </ul>
+
+      <a class="nav-cta" href="#contact">HIRE_ME →</a>
+    </nav>
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-left">
+        <p class="sys-label"></p>
+        <div class="hero-name">AMR</div>
+        <div class="hero-surname">SHEQWARA</div>
+
+        <div class="bracket-row">
+          <span class="bracket">[</span>
+          <div class="bracket-content">
+            ROLE: <b>AI/ML ENGINEER</b><br />
+            STATUS: <b>AVAILABLE</b>
+          </div>
+          <span class="bracket">]</span>
         </div>
-    </body>
+
+        <p class="hero-role">
+          Building intelligent systems —<br />
+          <span>from model training to deployment.</span>
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">CONTACT_ME →</a>
+          <a class="btn btn-ghost" href="#projects">VIEW_WORK</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="status-chip">
+          <div class="pulse"></div>
+          OPEN_TO_WORK
+        </div>
+
+        <div class="photo-wrap">
+          <div class="photo-tint"></div>
+        </div>
+        <div class="photo-wrap">
+          <div class="photo-tint"></div>
+        </div>
+        <div class="photo-fade"></div>
+
+        <div class="map-wrap">
+          <svg
+            class="palestine-map"
+            viewBox="-20 0 160 220"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <filter id="mapglow">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+              <filter id="softglow">
+                <feGaussianBlur stdDeviation="6" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+              <pattern
+                id="scan"
+                x="0"
+                y="0"
+                width="2"
+                height="4"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect width="2" height="1" fill="rgba(93,202,165,0.05)" />
+              </pattern>
+            </defs>
+
+            <path
+              filter="url(#softglow)"
+              opacity="0.12"
+              fill="#5dcaa5"
+              d="
+              M30.436653,163.491089 C23.680214,147.077011 19.221647,130.276367 13.199279,114.023705 C12.049742,110.921432 12.366358,108.793091 14.677026,106.446861 C27.611998,93.312752 34.011086,76.772797 38.537094,59.388641 C39.995144,53.788345 41.410675,48.140606 42.074284,42.320255 C42.440025,39.112446 42.274349,35.327091 46.908615,33.992756 C48.770813,33.456581 47.918617,30.373468 48.358730,28.483265 C49.875950,21.967064 52.839966,19.731422 59.234051,21.902569 C64.150719,23.572050 65.981911,21.712732 67.057800,17.395359 C67.502228,15.611887 67.475784,12.682461 70.230629,13.208309 C72.764336,13.691948 75.714485,15.217100 74.992355,18.574913 C73.807800,24.082956 74.955872,30.292002 70.471672,34.882336 C69.505165,35.871723 69.321190,37.170734 70.078552,38.075764 C74.792557,43.708900 70.980507,49.768158 70.980865,55.586853 C70.981453,64.969429 69.177086,74.308037 70.001106,83.726433 C70.212074,86.137650 69.728592,87.751472 67.946136,89.820084 C63.831356,94.595467 63.874725,100.713066 64.194397,106.817436 C64.579376,114.168785 64.463104,121.747650 63.410488,128.828964 C62.633865,134.053589 59.669067,139.624527 57.114685,144.800644 C55.261585,148.555679 55.386902,152.687988 54.643261,156.615265 C53.509262,162.604126 55.279610,168.857285 51.745739,174.834579 C49.307384,178.958893 49.557316,184.710831 48.772923,189.761353 C48.245762,193.155609 47.174721,196.229568 44.598263,198.583115 C41.944405,201.007355 39.674793,200.427811 39.563477,196.890488 C39.192951,185.116226 33.397179,174.906464 30.436653,163.491089 M66.586105,86.544334 C67.273888,75.408470 67.731636,64.251488 68.751190,53.146084 C69.226692,47.966602 70.151970,43.029335 66.993515,38.292572 C65.808044,36.514709 66.403526,34.616432 67.975548,32.871117 C71.808395,28.615761 70.063538,23.117529 72.005356,17.715256 C69.564117,18.690546 69.739883,20.030388 69.289497,21.035320 C67.714401,24.549747 62.970798,27.019835 59.971149,25.559006 C53.392773,22.355333 50.910992,25.109896 50.450142,31.743828 C50.333759,33.419159 50.736324,35.500015 49.197144,36.352676 C43.502251,39.507492 44.363438,45.259068 43.282394,50.258072 C38.962124,70.236023 33.515285,89.786552 19.313301,105.386665 C15.913313,109.121368 15.317775,112.380943 16.982851,116.994057 C23.146996,134.071869 29.110769,151.224274 34.938835,168.420151 C37.890106,177.127960 41.439220,185.660080 42.780891,195.513000 C43.810459,194.414795 44.544544,194.003708 44.629498,193.486099 C46.242451,183.658218 49.710258,174.255280 50.949108,164.302399 C51.533943,159.603806 50.590469,154.724686 52.492439,150.186447 C57.798630,137.525497 61.074860,124.395317 61.573288,110.631981 C61.608997,109.646019 61.609402,108.619316 61.382984,107.669540 C59.554413,99.999100 61.781109,93.279137 66.586105,86.544334 z"
+            />
+
+            <path
+              class="pal-shape"
+              d="
+              M30.436653,163.491089 C23.680214,147.077011 19.221647,130.276367 13.199279,114.023705 C12.049742,110.921432 12.366358,108.793091 14.677026,106.446861 C27.611998,93.312752 34.011086,76.772797 38.537094,59.388641 C39.995144,53.788345 41.410675,48.140606 42.074284,42.320255 C42.440025,39.112446 42.274349,35.327091 46.908615,33.992756 C48.770813,33.456581 47.918617,30.373468 48.358730,28.483265 C49.875950,21.967064 52.839966,19.731422 59.234051,21.902569 C64.150719,23.572050 65.981911,21.712732 67.057800,17.395359 C67.502228,15.611887 67.475784,12.682461 70.230629,13.208309 C72.764336,13.691948 75.714485,15.217100 74.992355,18.574913 C73.807800,24.082956 74.955872,30.292002 70.471672,34.882336 C69.505165,35.871723 69.321190,37.170734 70.078552,38.075764 C74.792557,43.708900 70.980507,49.768158 70.980865,55.586853 C70.981453,64.969429 69.177086,74.308037 70.001106,83.726433 C70.212074,86.137650 69.728592,87.751472 67.946136,89.820084 C63.831356,94.595467 63.874725,100.713066 64.194397,106.817436 C64.579376,114.168785 64.463104,121.747650 63.410488,128.828964 C62.633865,134.053589 59.669067,139.624527 57.114685,144.800644 C55.261585,148.555679 55.386902,152.687988 54.643261,156.615265 C53.509262,162.604126 55.279610,168.857285 51.745739,174.834579 C49.307384,178.958893 49.557316,184.710831 48.772923,189.761353 C48.245762,193.155609 47.174721,196.229568 44.598263,198.583115 C41.944405,201.007355 39.674793,200.427811 39.563477,196.890488 C39.192951,185.116226 33.397179,174.906464 30.436653,163.491089 M66.586105,86.544334 C67.273888,75.408470 67.731636,64.251488 68.751190,53.146084 C69.226692,47.966602 70.151970,43.029335 66.993515,38.292572 C65.808044,36.514709 66.403526,34.616432 67.975548,32.871117 C71.808395,28.615761 70.063538,23.117529 72.005356,17.715256 C69.564117,18.690546 69.739883,20.030388 69.289497,21.035320 C67.714401,24.549747 62.970798,27.019835 59.971149,25.559006 C53.392773,22.355333 50.910992,25.109896 50.450142,31.743828 C50.333759,33.419159 50.736324,35.500015 49.197144,36.352676 C43.502251,39.507492 44.363438,45.259068 43.282394,50.258072 C38.962124,70.236023 33.515285,89.786552 19.313301,105.386665 C15.913313,109.121368 15.317775,112.380943 16.982851,116.994057 C23.146996,134.071869 29.110769,151.224274 34.938835,168.420151 C37.890106,177.127960 41.439220,185.660080 42.780891,195.513000 C43.810459,194.414795 44.544544,194.003708 44.629498,193.486099 C46.242451,183.658218 49.710258,174.255280 50.949108,164.302399 C51.533943,159.603806 50.590469,154.724686 52.492439,150.186447 C57.798630,137.525497 61.074860,124.395317 61.573288,110.631981 C61.608997,109.646019 61.609402,108.619316 61.382984,107.669540 C59.554413,99.999100 61.781109,93.279137 66.586105,86.544334 z"
+            />
+
+            <rect x="-20" y="0" width="160" height="220" fill="url(#scan)" />
+
+            <circle
+              cx="38"
+              cy="70"
+              r="1.5"
+              fill="#5dcaa5"
+              filter="url(#mapglow)"
+            >
+              <animate
+                attributeName="opacity"
+                values="1; 0.4; 1"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <circle
+              cx="38"
+              cy="70"
+              r="1.5"
+              fill="none"
+              stroke="#5dcaa5"
+              stroke-width="0.4"
+            >
+              <animate
+                attributeName="r"
+                values="1.5; 10"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="opacity"
+                values="0.8; 0"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <circle
+              cx="38"
+              cy="70"
+              r="1.5"
+              fill="none"
+              stroke="#5dcaa5"
+              stroke-width="0.2"
+            >
+              <animate
+                attributeName="r"
+                values="1.5; 10"
+                dur="2s"
+                begin="1s"
+                repeatCount="indefinite"
+              />
+              <animate
+                attributeName="opacity"
+                values="0.8; 0"
+                dur="2s"
+                begin="1s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <polyline
+              points="38,70 48,82 85,82"
+              fill="none"
+              stroke="#5dcaa5"
+              stroke-width="0.4"
+              opacity="0.5"
+            />
+
+            <text
+              x="88"
+              y="84"
+              font-family="Share Tech Mono, monospace"
+              font-size="4"
+              fill="#9fe1cb"
+              opacity="0.9"
+              letter-spacing="1"
+            >
+              TULKARM
+            </text>
+            <text
+              x="88"
+              y="90"
+              font-family="Share Tech Mono, monospace"
+              font-size="3"
+              fill="#5dcaa5"
+              opacity="0.4"
+              letter-spacing="1"
+            >
+              32.3N 35.0E
+            </text>
+          </svg>
+        </div>
+        <div class="loc-chip">📍 TULKARM · PS</div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="rule-diamonds"><span>◆ ◆ ◆</span></div>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">SKILLS</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-code">MODULE::ML</div>
+          <div class="skill-name">Machine Learning</div>
+          <div class="skill-desc">
+            Training and evaluating models — from classical methods to deep
+            architectures.
+          </div>
+          <div class="skill-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">XGBoost</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-code">MODULE::NLP</div>
+          <div class="skill-name">NLP & LLMs</div>
+          <div class="skill-desc">
+            Fine-tuning language models, RAG pipelines, and production-grade
+            prompt engineering.
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Transformers</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">HuggingFace</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-code">MODULE::OPS</div>
+          <div class="skill-name">MLOps</div>
+          <div class="skill-desc">
+            Deploying, serving, and monitoring models with CI/CD and experiment
+            tracking.
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">MLflow</span>
+            <span class="tag">FastAPI</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-code">MODULE::DATA</div>
+          <div class="skill-name">Data Engineering</div>
+          <div class="skill-desc">
+            Processing and transforming data pipelines for large-scale ML
+            consumption.
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Spark</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" style="padding-top: 0">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-list">
+        <a class="project-row" href="#">
+          <div class="project-num">01</div>
+          <div class="project-info">
+            <div class="project-title">HOUSE PRICE PREDICTION</div>
+            <div class="project-desc">
+              Developed an end-to-end regression pipeline to forecast real
+              estate valuations, utilizing advanced feature engineering and
+              gradient boosting algorithms.
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="tech-tag">BERT</span>
+            <span class="arrow">↗</span>
+          </div>
+        </a>
+        <a class="project-row" href="#">
+          <div class="project-num">02</div>
+          <div class="project-info">
+            <div class="project-title">OBJECT DETECTION</div>
+            <div class="project-desc">
+              Lightweight real-time detection pipeline optimized for edge
+              deployment on low-power devices.
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="tech-tag">YOLOv8</span>
+            <span class="arrow">↗</span>
+          </div>
+        </a>
+        <a class="project-row" href="#">
+          <div class="project-num">03</div>
+          <div class="project-info">
+            <div class="project-title">FRUIT QUALITY CLASSIFICATION</div>
+            <div class="project-desc">
+              Engineered a computer vision model using deep neural networks to
+              autonomously grade and classify fruit health and defects from
+              image datasets.
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="tech-tag">LangChain</span>
+            <span class="arrow">↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="contact-block" id="contact">
+      <div class="contact-inner">
+        <div>
+          <div class="contact-title">LET'S<br />BUILD.</div>
+          <p class="contact-sub">
+            OPEN TO FULL-TIME ROLES<br />
+            FREELANCE · COLLABORATIONS<br />
+            -&gt; DROP A MESSAGE
+          </p>
+        </div>
+        <div class="contact-links">
+          <!-- Replace href values with your actual links -->
+          <a
+            class="contact-link"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=amr.sheqwara@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EMAIL <span>✉ →</span>
+          </a>
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/amrsheqwara/"
+            target="_blank"
+            rel="noopener"
+          >
+            LINKEDIN <span>in →</span>
+          </a>
+          <a
+            class="contact-link"
+            href="https://github.com/Amr-Sheqwara"
+            target="_blank"
+            rel="noopener"
+          >
+            GITHUB <span>⌥ →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2026 AMR SHEQWARA</span>
+      <span>◆ TULKARM · PS</span>
+      <span>v1.0</span>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
